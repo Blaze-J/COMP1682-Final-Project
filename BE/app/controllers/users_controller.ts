@@ -45,7 +45,6 @@ export default class UsersController {
         user.email = payload.email
         user.password = randompass
 
-
         user.roleId = payload.role
         await user.save()
         mail.send((message) => {
